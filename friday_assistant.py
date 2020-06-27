@@ -27,7 +27,7 @@ def response(line):
 		for hotword in valuesList:
 			if hotword in line:
 				result.append(random.choice(values['responses'].split('|')))
-				if instance['tasks'] != None or '':
+				if values['tasks'] != None or '':
 					tasks.append(values['tasks'])
 	return result
 
